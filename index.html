@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseTix | Book Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header glass container">
+    <a class="logo" href="index.html">PulseTix</a>
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <a class="cta-btn" href="login.html">User Login</a>
+  </header>
+
+  <main class="container">
+    <section class="hero reveal">
+      <div>
+        <p class="eyebrow">SMART BOOKING PLATFORM</p>
+        <h1>Discover and book events with advanced search.</h1>
+        <p>Search by event name, artist, city, ticket plan, and female-only access options in one place.</p>
+      </div>
+      <a class="cta-btn" href="event.html?event=Neon%20Nights%20Festival">View Featured Event</a>
+    </section>
+
+    <section class="search-panel glass reveal" id="events">
+      <h2>Advanced Search</h2>
+      <div class="search-grid">
+        <input id="searchInput" type="search" placeholder="Search by event, artist, venue, city..." />
+        <select id="planFilter">
+          <option value="all">All ticket plans</option>
+          <option value="vip">VIP</option>
+          <option value="premium">Premium</option>
+          <option value="standard">Standard</option>
+        </select>
+        <select id="femaleFilter">
+          <option value="all">All access types</option>
+          <option value="female-only">Female only</option>
+          <option value="open">Open for all</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="event-grid reveal" id="eventGrid">
+      <article class="event-card glass" data-name="Neon Nights Festival" data-artist="DJ Astra" data-city="Dubai" data-venue="Skyline Arena" data-plan="vip" data-female="open">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Concert crowd" />
+        <div class="event-header">
+          <h3>Neon Nights Festival</h3>
+          <span class="tag tag-hot">Trending</span>
+        </div>
+        <p>DJ Astra • Skyline Arena • Dubai</p>
+        <div class="row"><strong>$89</strong><span>VIP Plan</span></div>
+        <a class="book-btn" href="event.html?event=Neon%20Nights%20Festival">View Details</a>
+      </article>
+
+      <article class="event-card glass" data-name="Broadway Under Stars" data-artist="Elena Hart" data-city="London" data-venue="Luna Park" data-plan="premium" data-female="female-only">
+        <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=80" alt="Theatre stage" />
+        <div class="event-header">
+          <h3>Broadway Under Stars</h3>
+          <span class="tag">Premium</span>
+        </div>
+        <p>Elena Hart • Luna Park • London</p>
+        <div class="row"><strong>$64</strong><span>Female-only seating zone</span></div>
+        <a class="book-btn" href="event.html?event=Broadway%20Under%20Stars">View Details</a>
+      </article>
+
+      <article class="event-card glass" data-name="Finals Championship Night" data-artist="MC Ryder" data-city="New York" data-venue="Metro Dome" data-plan="standard" data-female="open">
+        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=80" alt="Stadium event" />
+        <div class="event-header">
+          <h3>Finals Championship Night</h3>
+          <span class="tag">Standard</span>
+        </div>
+        <p>MC Ryder • Metro Dome • New York</p>
+        <div class="row"><strong>$45</strong><span>Family plan available</span></div>
+        <a class="book-btn" href="event.html?event=Finals%20Championship%20Night">View Details</a>
+      </article>
+    </section>
+
+    <section id="sponsors" class="reveal">
+      <h2>Sponsors & Advertisements</h2>
+      <div class="sponsor-grid">
+        <div class="sponsor-slot glass">Sponsor Banner 970x250</div>
+        <div class="sponsor-slot glass">Organizer Promotion Slot A</div>
+        <div class="sponsor-slot glass">Organizer Promotion Slot B</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
