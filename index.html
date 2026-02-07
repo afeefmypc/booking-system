@@ -93,6 +93,178 @@
     </section>
   </main>
 
+  <title>PulseTix | Next-Gen Event Ticket Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="site-header glass">
+    <a class="logo" href="#">PulseTix</a>
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#experience">Experience</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cta-btn" id="openBooking">Book Now</button>
+  </header>
+
+  <main>
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">LIVE EXPERIENCES, REIMAGINED</p>
+        <h1>Book unforgettable events with cinematic motion.</h1>
+        <p>Discover concerts, sports, theater, and festivals with live popularity indicators, immersive cards, and one-tap booking.</p>
+        <div class="hero-actions">
+          <button class="cta-btn" id="heroBook">Reserve Tickets</button>
+          <a class="ghost-btn" href="#events">Explore Events</a>
+        </div>
+        <div class="hero-stats">
+          <article class="stat glass">
+            <p class="stat-value" data-target="120">0</p>
+            <span>Events this week</span>
+          </article>
+          <article class="stat glass">
+            <p class="stat-value" data-target="42">0</p>
+            <span>Cities covered</span>
+          </article>
+          <article class="stat glass">
+            <p class="stat-value" data-target="98">0</p>
+            <span>% booking success</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-panel glass float">
+        <div class="live-pill"><span></span> Live demand rising</div>
+        <h2>Featured Tonight</h2>
+        <p class="event-name">Neon Nights Festival</p>
+        <ul>
+          <li><span>Date</span><strong>Nov 15, 8:00 PM</strong></li>
+          <li><span>Venue</span><strong>Skyline Arena</strong></li>
+          <li><span>Seats Left</span><strong>124</strong></li>
+          <li><span>From</span><strong>$49</strong></li>
+        </ul>
+        <button class="cta-btn full" data-event="Neon Nights Festival">Book Featured Event</button>
+      </aside>
+    </section>
+
+    <section class="marquee" aria-label="Popular tags">
+      <div class="track">
+        <span>⚡ EDM Nights</span><span>🏟️ Big Finals</span><span>🎭 Broadway</span><span>🎤 Indie Live</span><span>🎪 Street Festivals</span><span>🎹 Jazz Sessions</span>
+        <span>⚡ EDM Nights</span><span>🏟️ Big Finals</span><span>🎭 Broadway</span><span>🎤 Indie Live</span><span>🎪 Street Festivals</span><span>🎹 Jazz Sessions</span>
+      </div>
+    </section>
+
+    <section class="container reveal" id="events">
+      <div class="section-head">
+        <h2>Trending Events</h2>
+        <p>Handpicked experiences with real-time seat availability and dynamic demand indicators.</p>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card glass tilt" data-event="Electric Symphony Live">
+          <div class="event-image gradient-1"></div>
+          <div class="event-top">
+            <h3>Electric Symphony Live</h3>
+            <span class="chip">Hot</span>
+          </div>
+          <p>Immersive orchestral EDM crossover show.</p>
+          <div class="event-meta"><span>Dec 2 • Downtown Hall</span><strong>$62</strong></div>
+          <button class="book-btn">Book Seat</button>
+        </article>
+
+        <article class="event-card glass tilt" data-event="Championship Night Finals">
+          <div class="event-image gradient-2"></div>
+          <div class="event-top">
+            <h3>Championship Night Finals</h3>
+            <span class="chip">Almost sold out</span>
+          </div>
+          <p>Top teams clash in the season finale showdown.</p>
+          <div class="event-meta"><span>Dec 7 • Metro Dome</span><strong>$88</strong></div>
+          <button class="book-btn">Book Seat</button>
+        </article>
+
+        <article class="event-card glass tilt" data-event="Broadway Under Stars">
+          <div class="event-image gradient-3"></div>
+          <div class="event-top">
+            <h3>Broadway Under Stars</h3>
+            <span class="chip">New</span>
+          </div>
+          <p>Open-air musical theatre with iconic performances.</p>
+          <div class="event-meta"><span>Dec 12 • Luna Park</span><strong>$54</strong></div>
+          <button class="book-btn">Book Seat</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="container reveal" id="experience">
+      <div class="section-head"><h2>Why PulseTix feels modern</h2></div>
+      <div class="feature-grid">
+        <article class="feature glass">
+          <h3>Animated seat confidence</h3>
+          <p>Live demand and low-seat hints help users decide faster with less friction.</p>
+        </article>
+        <article class="feature glass">
+          <h3>Interactive discovery</h3>
+          <p>3D hover cards and smooth section reveals make browsing feel premium.</p>
+        </article>
+        <article class="feature glass">
+          <h3>Faster checkout</h3>
+          <p>One streamlined modal captures booking details in under 20 seconds.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container reveal" id="pricing">
+      <div class="section-head"><h2>Simple pricing</h2></div>
+      <div class="price-card glass">
+        <h3>Pulse Pass</h3>
+        <p><strong>$9.99/month</strong> for priority ticket alerts and early booking access.</p>
+        <button class="cta-btn" data-event="Pulse Pass">Start Free Trial</button>
+      </div>
+    </section>
+
+    <section class="container reveal" id="faq">
+      <div class="section-head"><h2>FAQ</h2></div>
+      <details class="glass">
+        <summary>Can I cancel a booking?</summary>
+        <p>Yes. Most events support cancellation up to 24 hours before start time.</p>
+      </details>
+      <details class="glass">
+        <summary>Do I receive an e-ticket instantly?</summary>
+        <p>Absolutely. Your QR ticket is sent to email instantly after payment confirmation.</p>
+      </details>
+    </section>
+  </main>
+
+  <div class="booking-modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-panel glass">
+      <button class="close-modal" id="closeModal" aria-label="Close booking dialog">×</button>
+      <h2>Reserve your ticket</h2>
+      <p id="selectedEventText">Event: General Admission</p>
+      <form id="bookingForm">
+        <label>Full Name<input type="text" required placeholder="Jane Doe" /></label>
+        <label>Email<input type="email" required placeholder="jane@example.com" /></label>
+        <label>Tickets<input type="number" min="1" max="10" value="2" required /></label>
+        <button type="submit" class="cta-btn full">Confirm Booking</button>
+      </form>
+      <p id="successMsg" class="success-msg" hidden>✅ Booking confirmed! Check your email for your e-ticket.</p>
+    </div>
+  </div>
+
+  <footer class="container">
+    <p>© 2026 PulseTix. Crafted for unforgettable nights.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
