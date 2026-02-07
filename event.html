@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseTix | Event Details</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header glass container">
+    <a class="logo" href="index.html">PulseTix</a>
+    <nav><a href="index.html">Back to events</a><a href="login.html">Login</a></nav>
+  </header>
+
+  <main class="container reveal">
+    <section class="event-detail glass">
+      <h1 id="eventTitle">Event Details</h1>
+      <p id="eventMeta">Artist, venue and city details.</p>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1200&q=80" alt="Event image 1" />
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80" alt="Event image 2" />
+        <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=1200&q=80" alt="Event image 3" />
+      </div>
+
+      <div class="split">
+        <div>
+          <h3>Ticket Plans</h3>
+          <ul>
+            <li>Standard: $45</li>
+            <li>Premium: $64</li>
+            <li>VIP: $89</li>
+            <li>Female-only secured section available</li>
+          </ul>
+        </div>
+        <form id="bookingForm" class="glass form-card">
+          <h3>Book Now</h3>
+          <label>Name<input type="text" required /></label>
+          <label>Email<input type="email" required /></label>
+          <label>Plan
+            <select id="planSelect">
+              <option>Standard</option>
+              <option>Premium</option>
+              <option>VIP</option>
+              <option>Female-only</option>
+            </select>
+          </label>
+          <button class="cta-btn" type="submit">Confirm Booking</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2>Organizer Sponsors</h2>
+      <div class="sponsor-grid">
+        <div class="sponsor-slot glass">Main Partner Ad Space</div>
+        <div class="sponsor-slot glass">Co-sponsor logo strip</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
